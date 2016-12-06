@@ -1,5 +1,5 @@
 ---
-titleBreadcrumb: Home
+titleBreadcrumb: Hem
 ...
 
 <h1>Min me-sida i kursen Design</h1>
@@ -18,12 +18,3 @@ I Gumboda har jag flera hundar, höns och en katt - dessutom gillar jag att odla
 grönsaker och renovera gården på sommaren.
 
 På vintern brukar jag resa till Thailand!
-
-<style>
-.me {
-    width: 400px;
-    float: right;
-    margin-bottom: 10px;
-    clear: right; /*prevents image from overlapping byline*/
-}
-</style>
