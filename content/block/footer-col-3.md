@@ -1,4 +1,4 @@
-####Troubleshoot
+####Problemlösning
 
-* [Gitter Chat](https://gitter.im/mosbth/design)
-* [GitHub Issues](https://github.com/canax/anax-flat/issues)
+[Gitter Chat](https://gitter.im/mosbth/design)<br>
+[GitHub Issues](https://github.com/canax/anax-flat/issues)

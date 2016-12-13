@@ -59,7 +59,7 @@ clean-cache:
 	@$(call HELPTEXT,$@)
 
 	@$(ECHO) "$(ACTION)Remove and re-create the directory for the cache items$(NO_COLOR)"
-	[ ! -d cache ] || rm -rf cache/ 
+	[ ! -d cache ] || rm -rf cache/
 	install -d -m 777 cache/cimage cache/anax
 
 
@@ -144,3 +144,13 @@ less-lint: less
 	$(NPMBIN)/lessc --lint $(LESS_OPTIONS) $(LESS) > build/lint/style.less
 	- $(NPMBIN)/csslint build/css/style.css > build/lint/style.css
 	ls -l build/lint/
+
+
+
+# target: upgrade-normalize       - Upgrade LESS module - Normalize.
+.PHONY: upgrade-normalize
+upgrade-normalize:
+    @$(call HELPTEXT,$@)
+
+	# Normalizer
+    wget --quiet https://necolas.github.io/normalize.css/latest/normalize.css -O $(LESS_MODULES)/normalize.less
