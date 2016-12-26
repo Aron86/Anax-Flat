@@ -24,7 +24,7 @@ return [
             // Style and stylesheets
             //"stylesheets" => ["css/default.min.css"],
             "stylesheets" => [
-                "css/layout.min.css",
+                "css/typograpy.min.css",
                 "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
             ],
             "styleInline" => null,
@@ -41,7 +41,7 @@ return [
      * Add default views to always include.
      */
     "views" => [
-        [
+        /**[
             "region" => "header",
             "template" => "default/image",
             "data" => [
@@ -51,13 +51,13 @@ return [
             ],
             "sort" => 1
         ],
-        [
+        */[
             "region" => "header",
             "template" => "default/header",
             "data" => [
                 "homeLink"      => "",
-                "siteLogoText"  => "Anax Flat",
-                "siteLogoTextIcon" => "img/favicon/favicon_40x40.png",
+                "siteLogoText"  => "",
+                "siteLogoTextIcon" => "img/favicon/design.png",
                 "siteLogoTextIconAlt" => "Small logo",
                 "siteLogo"      => null, //"img/anax.png",
                 "siteLogoAlt"   => null, //"Anax Logo",

@@ -35,8 +35,20 @@ return [
 
             "typography" => [
                 "text"  => t("Typografi"),
-                "url"   => $this->di->get("url")->create("typography?hgrid"),
+                "url"   => $this->di->get("url")->create("typography"),
                 "title" => t("Typografi")
+            ],
+
+            "analysis" => [
+                "text"  => t("Analys"),
+                "url"   => $this->di->get("url")->create("analysis"),
+                "title" => t("Analyser")
+            ],
+
+            "theme" => [
+                "text"  => t("Teman"),
+                "url"   => $this->di->get("url")->create("theme"),
+                "title" => t("Teman")
             ],
         ],
     ],
@@ -55,6 +67,13 @@ return [
         // Here comes the menu structure
         "items" => [
 
+            "hem" => [
+                "text"  => t("Hem"),
+                "url"   => $this->di->get("url")->create("index"),
+                "title" => t("Hem"),
+                "mark-if-parent" => true,
+            ],
+
             "report" => [
                 "text"  => t("Redovisning"),
                 "url"   => $this->di->get("url")->create("report"),
@@ -66,6 +85,30 @@ return [
                 "text"  => t("Om"),
                 "url"   => $this->di->get("url")->create("about"),
                 "title" => t("Om sidan")
+            ],
+
+            "grid" => [
+                "text"  => t("Grid"),
+                "url"   => $this->di->get("url")->create("grid?vgrid"),
+                "title" => t("Grid-sidan")
+            ],
+
+            "typography" => [
+                "text"  => t("Typografi"),
+                "url"   => $this->di->get("url")->create("typography"),
+                "title" => t("Typografi")
+            ],
+
+            "analysis" => [
+                "text"  => t("Analys"),
+                "url"   => $this->di->get("url")->create("analysis"),
+                "title" => t("Analyser")
+            ],
+
+            "theme" => [
+                "text"  => t("Teman"),
+                "url"   => $this->di->get("url")->create("theme"),
+                "title" => t("Teman")
             ],
         ],
     ],
