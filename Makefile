@@ -150,7 +150,7 @@ less-lint: less
 # target: upgrade-normalize       - Upgrade LESS module - Normalize.
 .PHONY: upgrade-normalize
 upgrade-normalize:
-    @$(call HELPTEXT,$@)
+	@$(call HELPTEXT,$@)
 
 	# Normalizer
-    wget --quiet https://necolas.github.io/normalize.css/latest/normalize.css -O $(LESS_MODULES)/normalize.less
+	wget --quiet https://necolas.github.io/normalize.css/latest/normalize.css -O $(LESS_MODULES)/normalize.less

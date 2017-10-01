@@ -35,9 +35,33 @@ return [
 
             "typography" => [
                 "text"  => t("Typografi"),
-                "url"   => $this->di->get("url")->create("typography?hgrid"),
+                "url"   => $this->di->get("url")->create("typography"),
                 "title" => t("Typografi")
             ],
+
+            "analysis" => [
+                "text"  => t("Analys"),
+                "url"   => $this->di->get("url")->create("analysis"),
+                "title" => t("Analyser")
+            ],
+
+            "theme" => [
+                "text"  => t("Teman"),
+                "url"   => $this->di->get("url")->create("theme"),
+                "title" => t("Teman")
+            ],
+
+			"images" => [
+				"text"  => t("Figure"),
+				"url"   => $this->di->get("url")->create("images"),
+				"title" => t("Figure")
+			],
+
+			"blogg" => [
+				"text"  => t("Blogg"),
+				"url"   => $this->di->get("url")->create("blogg"),
+				"title" => t("Blogg")
+			],
         ],
     ],
 
@@ -55,6 +79,13 @@ return [
         // Here comes the menu structure
         "items" => [
 
+            "hem" => [
+                "text"  => t("Hem"),
+                "url"   => $this->di->get("url")->create("index"),
+                "title" => t("Hem"),
+                "mark-if-parent" => true,
+            ],
+
             "report" => [
                 "text"  => t("Redovisning"),
                 "url"   => $this->di->get("url")->create("report"),
@@ -67,6 +98,36 @@ return [
                 "url"   => $this->di->get("url")->create("about"),
                 "title" => t("Om sidan")
             ],
+
+            "grid" => [
+                "text"  => t("Grid"),
+                "url"   => $this->di->get("url")->create("grid?vgrid"),
+                "title" => t("Grid-sidan")
+            ],
+
+            "typography" => [
+                "text"  => t("Typografi"),
+                "url"   => $this->di->get("url")->create("typography"),
+                "title" => t("Typografi")
+            ],
+
+            "analysis" => [
+                "text"  => t("Analys"),
+                "url"   => $this->di->get("url")->create("analysis"),
+                "title" => t("Analyser")
+            ],
+
+            "theme" => [
+                "text"  => t("Teman"),
+                "url"   => $this->di->get("url")->create("theme"),
+                "title" => t("Teman")
+            ],
+
+			"images" => [
+				"text"  => t("Figure"),
+				"url"   => $this->di->get("url")->create("images"),
+				"title" => t("Figure")
+			],
         ],
     ],
 
